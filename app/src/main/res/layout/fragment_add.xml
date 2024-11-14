@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.AddFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginTop="100dp"
+        app:cardBackgroundColor="#A1CBD9"
+        app:cardElevation="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/bungee"
+            android:includeFontPadding="false"
+            android:text="create post"
+            android:textSize="25dp" />
+    </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            app:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_margin="4dp"
+                    android:src="@drawable/user" />
+
+                <TextView
+                    android:id="@+id/fullName"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/bungee"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_toRightOf="@id/profile_image"
+                    android:gravity="center_vertical"
+                    android:text="Bhagyesh Suhagiya"
+                    android:textSize="15dp"
+                    android:includeFontPadding="false"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/work"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/button"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginTop="-9dp"
+                    android:layout_toRightOf="@id/profile_image"
+                    android:text="Android Developer"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_toRightOf="@id/fullName"
+                    android:enabled="false"
+                    android:backgroundTint="#98AFD5"
+                    android:text="post"
+                    android:visibility="visible" />
+
+
+                <EditText
+                    android:id="@+id/desc"
+                    android:layout_width="394dp"
+                    android:layout_height="150dp"
+                    android:layout_below="@id/profile_image"
+                    android:hint="What's on your mind ? description"
+                    android:textSize="20dp"
+                    android:gravity="top"/>
+                <ImageView
+                    android:id="@+id/post"
+                    android:layout_width="match_parent"
+                    android:layout_height="410dp"
+                    android:layout_below="@+id/desc"
+                    android:src="@drawable/pc"
+                    android:scaleType="centerCrop"
+                    android:layout_margin="4dp"/>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:elevation="10dp"
+                    android:layout_margin="8dp"
+                    app:cardBackgroundColor="#BDDCEA"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/post"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="0dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:text="Add your post"
+                        android:fontFamily="@font/bungee"
+                        android:textSize="20dp" />
+
+                    <ImageView
+                        android:id="@+id/gallery"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="325dp"
+                        android:src="@drawable/gallery"/>
+                </com.google.android.material.card.MaterialCardView>
+
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>

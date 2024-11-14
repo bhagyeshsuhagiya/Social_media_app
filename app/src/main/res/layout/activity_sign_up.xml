@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign up"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/extra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create your account"
+        android:textSize="25sp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/signup"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/extra"
+        android:layout_marginTop="30dp"
+        android:hint="Username"
+        android:layout_marginHorizontal="16dp"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_marginTop="30dp"
+        android:hint="Email"
+        android:layout_marginHorizontal="16dp"/>
+
+    <EditText
+        android:id="@+id/profession"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email"
+        android:layout_marginTop="30dp"
+        android:hint="Work"
+        android:layout_marginHorizontal="16dp"/>
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profession"
+        android:layout_alignParentEnd="true"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="30dp"
+        android:hint="Password" />
+
+    <Button
+        android:id="@+id/signupbutton"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/pass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Sign up"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+    <TextView
+        android:id="@+id/extra2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Already have an account?"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/signupbutton"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="20sp"
+        android:layout_marginHorizontal="70dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/extra2"/>
+
+</RelativeLayout>

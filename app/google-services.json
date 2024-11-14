@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "263231750847",
+    "project_id": "socialmedia-c4bae",
+    "storage_bucket": "socialmedia-c4bae.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:263231750847:android:2e7faa7384f69aa45d7c0a",
+        "android_client_info": {
+          "package_name": "com.example.socialmedia"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC26WjBFGP1gllB_dXfC14xAlXqiKfrKLw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

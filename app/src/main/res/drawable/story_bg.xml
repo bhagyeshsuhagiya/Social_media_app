@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Outer circle (Story Circle) -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#FFFFFF" /> <!-- Background color of the ring -->
+            <stroke
+                android:width="3dp"
+                android:color="#3674F9" /> <!-- Color and width of the ring -->
+        </shape>
+    </item>
+   </layer-list>
